@@ -1,5 +1,5 @@
 ## Objetivo de la práctica 
-Conocer las distintas herramientas con las cuales se va a trabajar en el curso, así como realizar su primer uso para identificar las aplicaciones que tiene cada una. 
+Conocer las distintas herramientas con las cuales se va a trabajar en el curso, así como realizar una investigación sobre como trabajan y su diferencia con otro tipo de lenguajes de programación, así como su primer uso para identificar como la manipulación de ciertos comandos básicos.
 
 ## Tiempo requerido en realizar la práctica completa
 5 hrs en investigación, creación de repositorio y subidas, así como solución de problemas que se describen a continuación.
