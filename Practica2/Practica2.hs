@@ -26,3 +26,29 @@ cashbackMonto 12.5 = 1.25
 
 cashbackMonto :: Float -> Float
 cashbackMonto  dinero = cashback dinero * 0.10
+
+{- Función 4: minutosHoras
+Descripción: Recibe un numero de minutos y los convierte a horas con minutos.
+Uso: minutosHoras 90  = 1 horas y 30 minutos
+-}
+
+minutosHoras :: Int ->  String  
+minutosHoras conversion= show horas ++ " horas y " ++ show minutos ++ " minutos "
+    where 
+     horas = conversion `div` 60
+     minutos = conversion `mod` 60
+
+{- Función 5: esEstafa
+Descripción: A partir de 4 numeros (que son respectivamente pago,cambio,intercambio,devolucion) regresará un boleando para confirmar una estafa.
+Uso: 500 325 500 0 = True
+-}
+
+esEstafa :: Float -> Float -> Float -> Float -> Bool
+esEstafa pago cambio intercambio devolucion = 
+    if cambio > devolucion
+    then True
+    else False 
+
+
+
+
