@@ -50,5 +50,63 @@ esEstafa pago cambio intercambio devolucion =
     else False 
 
 
+{- Función 6: esDescente 
+Descripción: A partir de 4 numeros regresará un boleando True si se ingresaron de forma descendiente.
+Uso: 10 9 8 7 = True 
+-}
 
+esDescente :: Float -> Float ->Float -> Float -> Bool
+esDescente x y w z = 
+    if  x > y  && y > w && w > z
+    then True
+    else False 
+
+    {- Función 7: calculoimc
+Descripción: Se calcula el imc a partir del peso(en kg) y la estatura(en cm).
+Uso:  60/ (162 / 100)^2 = 22.86
+-}
+
+calculoimc :: Float -> Float -> Float
+calculoimc peso estatura = peso / (estatura / 100) ^ 2
+
+{- Función 8: imc
+Descripción: A partir del caluloimc devuelve alguno de los valores: bajo, normal. sobrepeso, obesidad
+Uso:  peso estatura = normal 
+-}
+
+imc :: Float -> Float -> String
+imc peso estatura =
+  let valor  = calculoimc peso estatura
+  in  if (valor < 18.5)
+        then "bajo"
+    else if (valor > 18.5) && (valor <= 24.9)
+        then "normal"
+    else if (valor > 24.9) && (valor <= 29.9)
+        then "sobrepeso"
+    else "obesidad"
+
+
+{- Función 9: hipotenusa
+Descripción: Recibir base y altura de un triángulo rectángulo para calcular su hipotenusa.
+Uso:  base altura = hipotenusa 
+-}
+
+hipotenusa :: Float -> Float -> Float
+hipotenusa base altura = sqrt ((base)^2 + (altura)^2)
+
+{- Función 10: pendiente
+Descripción: Recibé dos tuplas flotantes (cada dato sera flotante) para calcular la pendiente de una recta que pasa por dos puntos.
+Uso:  (y2 - y1) / (x2 - x1) = distancia 
+-}
+
+pendiente :: (Float, Float, Float , Float) -> Float
+pendiente (x1 , y1,x2 , y2) =  (y2 - y1) / (x2 - x1) 
+
+{- Función 11: distanciaPuntos
+Descripción: Recibé dos tuplas flotantes (cada dato sera flotante) para calcular la distancia entre esos puntos.
+Uso: sqrt ((x2 - x1)^2 + (y2 - y1)^2) = distanciaPuntos
+-}
+
+distanciaPuntos :: (Float, Float, Float, Float)-> Float
+distanciaPuntos (x1, y1, x2, y2 ) = sqrt ((x2 - x1)^2 + (y2 - y1)^2)
 
