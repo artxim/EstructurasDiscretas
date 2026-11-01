@@ -1,3 +1,5 @@
+# Readme de la práctica 4
+
 ## Actividad 1
 ¿Cuál es la diferencia entre Num e Int? realiza un ejemplo en ghci, adjuntando una
 captura de pantalla. El ejemplo puede ser del estilo:
