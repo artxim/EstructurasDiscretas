@@ -21,3 +21,4 @@ sumCuadrados x y z =
         then cuadrado x + cuadrado z 
         else cuadrado x + cuadrado y 
 
+data Dia 

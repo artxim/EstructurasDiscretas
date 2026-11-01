@@ -37,6 +37,7 @@ diasDe (Meses 12) = 364
 mensajeCetes :: Float -> Plazo -> String 
 mensajeCetes x p = "Despues de " ++ show (diasDe p) ++ " dias, obtuve " ++ show (rendimiento x (cetes x p)) ++ " de rendimiento bruto sin asumir ningun riesgo crediticio. El monto total de mi inversion es de " ++ show (cetes x p) ++ "."
 
+<<<<<<< HEAD
 {-Función: negativos  
 Descripción:cuenta los números negativos de una lista.
 Uso: negativos [ -1 , 2 , 4 , 6 , -4]
@@ -79,3 +80,42 @@ ghci > [1 ,3 ,7 ,9]
 
 coprimos :: Int -> [Int]
 coprimos n=[x|x<-[1 .. n], gcd x n ==1]
+=======
+{- Funcion: negativos
+   Descripcion: cuenta los números negativos de la lista xs
+   Uso: negativos [1, -2, 3, -4] = 2
+-}
+negativos :: [Int] -> Int
+negativos xs = length [x | x <- xs, x < 0]
+
+{- Funcion: soloPares
+   Descripcion: devuelve únicamente los números pares de xs
+   Uso: soloPares [1, 2, 3, 4] = [2, 4]
+-}
+soloPares :: [Int] -> [Int]
+soloPares xs = [x | x <- xs, esParBit x]
+
+{- Funcion: esPrimo
+   Descripcion: True si n > 1 y no tiene divisores entre 2 y n-1
+   Uso: esPrimo 7 = True
+-}
+esPrimo :: Int -> Bool
+esPrimo n = if n > 1 && length [d | d <- [2..n-1], n mod d == 0] == 0 
+    then True 
+    else False
+
+{- Funcion: primos
+   Descripcion: devuelve los números primos de la lista xs
+   Uso: primos [1, 2, 3, 4, 5] = [2, 3, 5]
+-}
+
+primos :: [Int] -> [Int]
+primos xs = [x | x <- xs, esPrimo x]
+
+{- Funcion: coprimos
+   Descripcion: devuelve los x en [1..n] que no comparten con n ningún divisor mayor a 1
+   Uso: coprimos 6 = [1, 5]
+-}
+coprimos :: Int -> [Int]
+coprimos n = [x | x <- [1 .. n], gcd x n == 1]
+>>>>>>> 2bbdee4 (feat(practica4):Funciones con Nat y auxiliares de Nat)

@@ -30,7 +30,7 @@ data Nat = Cero  | Suc Nat deriving (Eq,Show)
 {- Función: sumaNat
     Descripción: Calacula la suma de dos naturales 
     Uso 1: sumaNat Cero (Suc Cero) = Suc Cero
-    Uso: sumaNat (Suc(Suc(Cero))) Suc(Suc(Suc(Cero))) = (Suc(Suc(Suc(Suc(Suc(Cero)))))
+    Uso: sumaNat (Suc(Suc(Cero))) (Suc(Suc(Suc(Cero)))) = Suc(Suc(Suc(Suc(Suc(Cero)))))
     -}
 
 sumaNat :: Nat -> Nat -> Nat
