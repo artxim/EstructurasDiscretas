@@ -3,6 +3,9 @@ module Auxiliar where
 --Declaración de naturales 
 data Nat = Cero  | Suc Nat deriving (Eq,Show)
 
+--Declaración de enteros
+data Ent = Zero | Succ Ent | Neg Ent deriving ( Eq, Show)
+
 --Matrioska
 data Matrioska= Mati | Cont Matrioska deriving (Eq, Show)
 
@@ -23,4 +26,17 @@ Uso: multNat (Suc(Suc Cero)) (Suc(Suc Cero)) = Suc(Suc(Suc(Suc Cero)))
 multNat :: Nat -> Nat -> Nat
 multNat Cero m= Cero
 multNat (Suc n) m = sumaNat m (multNat n m)
+
+{-Función:sumaEnt
+Descripción: Toma dos valores enteros y los suma.
+Uso: sumaEnt (Succ(Succ Zero)) (Succ(Succ Zero)) = Succ(Succ(Succ(Succ Zero)))
+-}
+
+sumaEnt :: Ent -> Ent ->Ent
+sumaEnt Zero m = m
+sumaEnt (Succ n) m = Succ (sumaEnt n m)
+
+
+
+
 
