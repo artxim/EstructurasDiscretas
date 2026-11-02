@@ -2,6 +2,7 @@
 ## Ejercicio 8
 1. ¿Cuál es la diferencia de las operaciones implementadas en ambos archivos? 
 ¿Como se manejan todos los casos en cada implementación?
+
 La diferencia principal es la forma en como se define los casos base y con ello los casos recursivos. Ejemplo de ello es que en el archivo enteros.hs se define como el sucesor y el negativo de un numero mas el cero o menos el cero, sin embargo en entero.hs se coloca una 'n' o una 'm' para representar cada uno de esos casos distintos de Neg y Suc en cada posición. 
 
 Además, los casos recursivos comparan si los números ingresados son mayores, menores o iguales para que a partir de cada caso en particular se realice alguna acción en particular.
@@ -21,6 +22,9 @@ Se implementa para poder saber como continuar con la operación si es mayor el p
 respuesta.
 
 La verdad es que yo iba a comenzar a utilizar la implementación de enteros.hs para el ejercicio de la multiplicaciónEntera pero luego me di cuenta que no era necesario. Así luego de analizar el archivo entero.hs pude observa que me ahorraba muchas líneas y el uso de una función auxiliar.
+
+## Sal de Ahí Chivita Chivita
+La canción de la chivita refleja muy bien la deficinión de un proceso recuriso así como su propósito. Desde el inicio de la canción existe el problema de que la chiva salga de un lugar que es complicado de acceder, de esa forma se va llamando a los demás animales para que se ayuden mutuamente para sacar la chiva de ahí, sin embargo de una forma en particular; la manera de que se llaman es de uno en uno hasta llegar al personaje principal Plim Plim que puede solucionar a todos los animales. La recursión también me recordo a la canción del Pollito Pío pero con la excepción de que no se solucionaba un problema.
 
 ## Objetivo de la práctica
 Aprender a utilizar los tipos de dato definidos como Ent, Nat y Matrioska. Realizar funciones recursivas para lograr operaciones con esos mismos tipos de dato.
