@@ -28,7 +28,7 @@ multNat Cero m= Cero
 multNat (Suc n) m = sumaNat m (multNat n m)
 
 {-Función:sumaEnt
-Descripción: Toma dos valores enteros y los suma.
+Descripción: Toma dos valores enteros positivos, incluyendo al 0, y los suma. Esta definida de forma reducida ya que para efectos de multiEnt es más que suficiente.
 Uso: sumaEnt (Succ(Succ Zero)) (Succ(Succ Zero)) = Succ(Succ(Succ(Succ Zero)))
 -}
 
